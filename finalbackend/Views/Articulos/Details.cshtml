@@ -1,0 +1,13 @@
+@model AlmacenMvc.Dtos.ArticuloDto
+
+<h2>Detalles del artículo</h2>
+
+<div class="mb-3">
+    <strong>Descripción:</strong> @Model.Descripcion
+</div>
+<div class="mb-3">
+    <strong>Precio:</strong> @Model.Precio
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+<a asp-action="Index" class="btn btn-secondary">Volver</a>
